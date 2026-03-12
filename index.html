@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibe Lotto - 로또 번호 생성기</title>
+    <title>Vibe Lotto - AI 기반 로또 번호 생성기 및 당첨 전략</title>
+    <meta name="description" content="Vibe Lotto는 독창적인 알고리즘으로 로또 번호를 생성하고, 최신 로또 통계와 분석 팁을 제공하는 고품질 서비스입니다.">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7919531268411775"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -11,26 +12,63 @@
 <body>
     <div class="container">
         <header>
-            <h1>Vibe Lotto</h1>
-            <button id="theme-toggle" aria-label="테마 변경">
-                <span class="icon">☀️</span>
-            </button>
+            <div class="logo-area">
+                <h1>Vibe Lotto</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="#lotto-gen">번호 생성</a>
+                <a href="#lotto-tips">당첨 팁</a>
+                <a href="#about">소개</a>
+                <button id="theme-toggle" aria-label="테마 변경">
+                    <span class="icon">☀️</span>
+                </button>
+            </nav>
         </header>
 
         <main>
-            <div id="lotto-display" class="lotto-container">
-                <div class="ball-placeholder">?</div>
-                <div class="ball-placeholder">?</div>
-                <div class="ball-placeholder">?</div>
-                <div class="ball-placeholder">?</div>
-                <div class="ball-placeholder">?</div>
-                <div class="ball-placeholder">?</div>
-            </div>
+            <!-- 번호 생성 섹션 -->
+            <section id="lotto-gen" class="hero-section">
+                <h2>오늘의 행운 번호 찾기</h2>
+                <p>독창적인 랜덤 추출 알고리즘을 통해 당신만의 행운을 잡아보세요.</p>
+                <div id="lotto-display" class="lotto-container">
+                    <div class="ball-placeholder">?</div>
+                    <div class="ball-placeholder">?</div>
+                    <div class="ball-placeholder">?</div>
+                    <div class="ball-placeholder">?</div>
+                    <div class="ball-placeholder">?</div>
+                    <div class="ball-placeholder">?</div>
+                </div>
+                <button id="generate-btn" class="primary-btn">번호 생성하기</button>
+            </section>
 
-            <button id="generate-btn" class="primary-btn">번호 생성하기</button>
+            <!-- 정보성 콘텐츠 섹션 (AdSense 고품질 기준 충족) -->
+            <section id="lotto-tips" class="info-section">
+                <h3>로또 당첨 확률을 높이는 전략</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>균형 잡힌 번호 조합</h4>
+                        <p>홀수와 짝수의 비율을 3:3 또는 2:4로 섞는 것이 통계적으로 유리합니다.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>연속 번호 피하기</h4>
+                        <p>세 개 이상의 연속된 번호가 나올 확률은 매우 낮으므로 분산 배치가 중요합니다.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>총합의 법칙</h4>
+                        <p>6개 번호의 총합이 121에서 160 사이일 때 당첨 확률이 높다는 분석 결과가 있습니다.</p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- 사이트 소개 섹션 -->
+            <section id="about" class="about-section">
+                <h3>Vibe Lotto 소개</h3>
+                <p>우리는 단순한 번호 생성을 넘어 사용자가 로또라는 문화를 즐겁게 향유할 수 있도록 최상의 UX를 제공합니다. 모든 번호는 편향되지 않은 난수 생성기(PRNG)를 통해 투명하게 추출됩니다.</p>
+            </section>
+
+            <!-- 제휴 문의 -->
             <section class="partnership-section">
-                <h2>제휴 문의</h2>
+                <h3>제휴 및 비즈니스 문의</h3>
                 <form action="https://formspree.io/f/xnjgdyqq" method="POST" class="inquiry-form">
                     <div class="form-group">
                         <label for="name">성함/업체명</label>
@@ -48,26 +86,40 @@
                 </form>
             </section>
 
+            <!-- 댓글 섹션 -->
             <section class="comments-section">
-                <h2>댓글</h2>
+                <h3>커뮤니티 의견</h3>
                 <div id="disqus_thread"></div>
                 <script>
-                    (function() { // DON'T EDIT BELOW THIS LINE
+                    (function() {
                     var d = document, s = d.createElement('script');
                     s.src = 'https://test-drkbqnpykf.disqus.com/embed.js';
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                     })();
                 </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 VibeCoding. 행운을 빕니다!</p>
+            <div class="footer-content">
+                <p>&copy; 2026 VibeCoding. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#" onclick="showPolicy('privacy')">개인정보처리방침</a>
+                    <a href="#" onclick="showPolicy('terms')">이 이용약관</a>
+                </div>
+            </div>
         </footer>
     </div>
-    <!-- Last Build: 2026-03-12 15:45 -->
+
+    <!-- 정책 모달 (AdSense 필수 요구사항) -->
+    <div id="policy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePolicy()">&times;</span>
+            <div id="policy-text"></div>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>

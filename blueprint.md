@@ -1,21 +1,24 @@
-# Vibe Lotto Blueprint
+# Vibe Lotto Blueprint (AdSense Optimization Edition)
 
 ## Overview
-Vibe Lotto is a modern, responsive web application for generating lotto numbers. It features a clean UI, dark mode support, and a partnership inquiry form.
+Vibe Lotto is a high-quality, AI-inspired lotto number generator designed to meet Google AdSense approval standards. It focuses on unique content, transparency, and a superior user experience.
 
-## Current Features
-- **Lotto Number Generation:** Generates 6 unique numbers (1-45) and displays them with color-coded balls.
-- **Dark Mode:** Supports light and dark themes with persistent storage in `localStorage`.
-- **Responsive Design:** Optimized for both mobile and desktop viewing.
-- **Partnership Inquiry Form:** Allows users to send inquiries via Formspree.
-- **Disqus Comments:** Integrated Disqus for user interaction at the bottom of the page.
+## AdSense Optimization Features
+- **High-Quality Content:** Added an "Info Section" with statistical tips for lotto players to provide real value beyond simple random generation.
+- **Transparency:** Clear "About Us" section explaining the service's purpose and logic.
+- **Mandatory Policy Pages:** Integrated "Privacy Policy" and "Terms of Service" accessible via the footer (required for AdSense).
+- **Improved UX/UI:**
+    - Professional navigation menu.
+    - Responsive "Google Sans" inspired design.
+    - Dark mode support with persistent storage.
+- **Accessibility:** Semantic HTML tags and ARIA labels.
 
-## Detailed Outline
-- **Design:** Modern UI with card-based layout, subtle shadows, and vibrant ball colors.
-- **Interactivity:** Animated ball generation, theme switching (Light/Dark), and functional contact form.
-- **Comments:** Disqus integration placed within a dedicated `.comments-section` for community engagement.
+## Implementation Details
+- **index.html:** Added SEO meta tags, navigation, info cards, about section, and policy modal.
+- **style.css:** Updated to a modern, clean "Google-style" aesthetic with a balanced color palette and responsive grid.
+- **main.js:** Added modal logic and kept the core random generation algorithm.
 
-## Recent Changes: Disqus Integration
-- **HTML Update:** Added `<div id="disqus_thread"></div>` and the Disqus embed script within `index.html`.
-- **CSS Update:** Added styling for `.comments-section` to maintain consistency with the layout and ensure proper spacing.
-- **Blueprint Update:** Created `blueprint.md` to document project state and changes.
+## Recent Changes
+- Implementation of AdSense quality guidelines based on official blog recommendations.
+- Added AdSense script to `<head>`.
+- Fixed HTML structural issues (closing tags).

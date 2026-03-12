@@ -1,1 +1,2 @@
-A simple HTML/JS/CSS starter template
+# Vibe Lotto
+다크/라이트 모드를 지원하는 현대적인 로또 번호 생성기입니다.
